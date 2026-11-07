@@ -1,0 +1,61 @@
+.tenant-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 22px; }
+.tenant-summary > section { display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fff; border: 1px solid #dfe7ed; border-radius: 8px; padding: 20px 24px; }
+.tenant-summary section > div > span { color: #748d9c; font-size: 12px; }
+.tenant-summary strong { display: block; font-size: 29px; font-weight: 600; line-height: 1.2; margin-top: 10px; font-variant-numeric: tabular-nums; }
+.tenant-summary-icon, .tenant-mark { display: grid; place-items: center; width: 44px; height: 44px; background: #edf4f7; color: #6a8e9f; border: 1px solid #e1ebf0; border-radius: 9px; flex-shrink: 0; }
+.tenant-summary section:last-child .tenant-summary-icon { background: #fbf6ed; color: #aa8b54; border-color: #eee3ce; }
+.tenant-primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 14px; min-height: 34px; border-radius: 5px; background: #245a72; color: #fff; font-size: 12px; }
+.tenant-primary-button:hover { background: #194b63; }
+.tenant-primary-button > span { font-size: 17px; line-height: 1; }
+.tenant-row-icon { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 6px; background: #f0f5f8; margin-right: 4px; }
+.tenant-table td { padding-top: 16px; padding-bottom: 16px; }
+.tenant-drawer { width: 570px; }
+.tenant-detail-banner { display: flex; align-items: center; gap: 13px; border-bottom: 1px solid #e5edf2; padding-bottom: 24px; margin-bottom: 26px; }
+.tenant-detail-banner > div > span:first-child { display: block; color: #839aa8; font-size: 11px; margin-bottom: 7px; }
+.tenant-section-heading { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+.tenant-section-heading h3 { margin: 0; }
+.tenant-section-heading > span { padding: 1px 6px; border-radius: 4px; background: #eaf1f5; color: #7e95a3; font-size: 10px; }
+.tenant-credential-list { border: 1px solid #e2eaf0; border-radius: 6px; }
+.tenant-credential-list .dense-table th,.tenant-credential-list .dense-table td { padding: 12px; font-size: 11px; }
+.tenant-no-credentials { padding: 30px 18px; text-align: center; border: 1px dashed #d5e2ea; border-radius: 7px; color: #829aa8; background: #f8fbfc; }
+.tenant-no-credentials h3 { margin: 12px 0 8px; color: #527488; }
+.tenant-no-credentials p { font-size: 12px; }
+.tenant-create-dialog { width: min(470px, calc(100vw - 32px)); padding: 26px; border: 1px solid #dce7ee; border-radius: 10px; color: #29495d; box-shadow: 0 20px 70px #173c5133; }
+.tenant-create-dialog::backdrop { background: #112d454d; }
+.tenant-create-dialog header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 26px; }
+.tenant-create-dialog h2 { font-size: 18px; font-weight: 600; }
+.tenant-create-dialog header p { margin-top: 7px; color: #8196a3; font-size: 12px; }
+.tenant-create-dialog label { display: block; font-size: 12px; margin-bottom: 8px; }
+.tenant-create-dialog input { width: 100%; min-height: 38px; border: 1px solid #ccdce6; border-radius: 5px; padding: 8px 11px; color: #35576b; font-size: 13px; }
+.tenant-create-dialog input[aria-invalid="true"] { border-color: #bd7568; }
+.tenant-create-note { display: flex; align-items: center; gap: 8px; padding: 12px; background: #f0f5f8; color: #74909f; border-radius: 5px; margin: 22px 0; font-size: 11px; }
+.tenant-form-error { color: #ab6253; font-size: 12px; margin-top: 8px; }
+.tenant-create-dialog footer { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 10px; border-top: 1px solid #e6edf2; padding-top: 20px; }
+.tenant-create-dialog footer > span { margin-right: auto; color: #8c9faa; font-size: 10px; }
+.tenant-module-tags { display: flex; gap: 6px; flex-wrap: wrap; max-width: 260px; }
+.tenant-module-tags > span { padding: 3px 7px; border-radius: 4px; background: #edf3f7; color: #5c7c8e; border: 1px solid #e0e9ef; font-size: 11px; white-space: nowrap; }
+.tenant-id-secondary { padding-left: 42px; }
+.tenant-quota { font-size: 11px; color: #8b9eaa; font-variant-numeric: tabular-nums; }
+.tenant-quota > strong { font-size: 12px; color: #527185; font-weight: 500; }
+.tenant-quota .meter { margin-top: 8px; max-width: 160px; height: 4px; }
+.tenant-row-actions { display: flex; gap: 16px; }
+.tenant-policy-section { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5edf2; }
+.tenant-policy-section .tenant-quota { padding: 15px; background: #f6f9fb; border: 1px solid #e2ebf0; border-radius: 5px; }
+.tenant-policy-section .tenant-quota .meter { max-width: none; }
+.tenant-create-dialog { width: min(530px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); }
+.tenant-create-dialog .tenant-field-label { margin-top: 18px; }
+.tenant-create-dialog fieldset { border: 0; margin: 24px 0 0; padding: 0; }
+.tenant-create-dialog legend { font-size: 12px; padding: 0; margin-bottom: 11px; }
+.tenant-create-dialog input[type="checkbox"] { width: 14px; min-height: 14px; height: 14px; margin: 0; padding: 0; accent-color: #245a72; flex-shrink: 0; }
+.tenant-create-dialog input[readonly] { background: #f3f6f8; color: #8499a7; }
+.tenant-module-choices { display: flex; flex-wrap: wrap; gap: 9px; }
+.tenant-create-dialog .tenant-module-choices label { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border: 1px solid #dae5ed; border-radius: 5px; margin: 0; cursor: pointer; }
+.tenant-module-choices label:has(input:checked) { background: #f0f6f8; border-color: #9db9c7; }
+.tenant-create-dialog .tenant-check { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.tenant-quota-input { display: flex; align-items: center; gap: 10px; margin-top: 12px; color: #8197a5; font-size: 12px; }
+.tenant-create-dialog .tenant-quota-input input { width: 150px; }
+@media (max-width: 900px) { .tenant-summary { gap: 10px; } .tenant-summary > section { padding: 16px; } .tenant-summary-icon { display: none; } }
+@media (max-width: 550px) { .tenant-summary { grid-template-columns: 1fr; } .tenant-summary > section { padding: 14px 18px; } .tenant-summary > section > div { display: flex; align-items: center; gap: 16px; width: 100%; justify-content: space-between; } .tenant-summary strong { margin: 0; font-size: 24px; } .tenant-create-dialog footer > span { flex-basis: 100%; } }
+.tenant-modal-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0}.tenant-modal-header h2{margin:0;font-size:18px}.tenant-form-fields{border:0;padding:0;margin:0;min-width:0}.tenant-create-dialog .tenant-form-fields>label{display:block;font-weight:600;font-size:13px;margin-bottom:8px}.tenant-create-dialog footer{justify-content:flex-end}.tenant-token-result{padding:0}.tenant-token-result textarea{display:block;box-sizing:border-box;width:100%;height:100px;padding:12px;margin:10px 0;font:12px monospace;overflow-wrap:anywhere;resize:vertical;border:1px solid var(--border,#dbe2ea);border-radius:7px}.tenant-credential-id{display:block;overflow-wrap:anywhere}.tenant-credential-list td:first-child code{display:inline-block;max-width:180px;overflow-wrap:anywhere;white-space:normal}.tenant-create-dialog fieldset:disabled{opacity:.65}
+
+.tenant-create-dialog .tenant-form-fields{margin:0}

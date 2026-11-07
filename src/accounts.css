@@ -1,0 +1,29 @@
+.access-tabs { display: flex; gap: 24px; margin-bottom: 20px; border-bottom: 1px solid #dfe7ed; }
+.access-tabs button { background: transparent; color: #8196a4; padding: 10px 0 12px; border-bottom: 2px solid transparent; font-size: 12px; }
+.access-tabs button[aria-pressed=true] { color: #315e73; border-color: #4c8b9e; font-weight: 600; }
+.account-toolbar { display: flex; justify-content: space-between; gap: 14px; margin-bottom: 16px; }
+.account-toolbar .search-field { max-width: 380px; flex: 1; }
+.account-table th:last-child,.account-table td:last-child { text-align: right; }
+.account-field { display: grid; gap: 8px; margin: 0 0 18px; font-size: 12px; color: #506d7e; }
+.account-field input { width: 100%; min-width: 0; padding: 10px 12px; border: 1px solid #d8e3eb; border-radius: 6px; background: white; color: #294c60; }
+.account-field input[readonly] { background: #f3f7f9; color: #7d94a2; }
+.account-check { display: flex; gap: 8px; align-items: center; margin: 14px 0; font-size: 12px; color: #506d7e; }
+.account-modal > header { flex-shrink: 0; }
+.account-modal > form { min-height: 0; display: flex; flex-direction: column; }
+.account-modal .credential-modal-body { min-height: 0; overflow-y: auto; }
+.account-modal footer { flex-shrink: 0; }
+.login-card .login-mode { background: transparent; color: #567c91; padding: 10px 0; margin-top: 12px; font-size: 12px; }
+.login-card .login-help { font-size: 12px; line-height: 1.7; margin-top: 12px; }
+.account-copy strong { max-width: 140px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.account-popover .account-entry { display: flex; width: 100%; padding: 10px 0; }
+@media(max-width:600px) { .account-toolbar { flex-wrap: wrap; } .account-toolbar .search-field { max-width: none; min-width: 170px; } }
+
+.accounts-page .account-table { min-width: 900px; }
+.account-table td:first-child { min-width: 220px; }
+.account-table td { padding-top: 16px; padding-bottom: 16px; }
+
+.account-role-field { margin: 0 0 18px; min-width: 0; }
+.account-role-field .credential-kind-options { min-width: 0; margin-bottom: 0; }
+.account-role-field .credential-kind-options label { min-width: 0; }
+.account-role-field .credential-kind-options label:has(input:disabled) { opacity: .55; cursor: not-allowed; }
+.account-role-description { margin: 9px 0 0; min-height: 18px; font-size: 11px; line-height: 1.65; color: #8198a7; }

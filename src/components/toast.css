@@ -1,0 +1,15 @@
+.app-toast { position:fixed; inset:16px 0 auto; margin:0 auto; width:max-content; min-width:320px; max-width:min(560px,calc(100vw - 32px)); padding:0; overflow:visible; border:1px solid var(--toast-border); border-radius:10px; background:#fff; color:#35576b; box-shadow:0 8px 32px #173b5126,0 2px 6px #173b510a; z-index:10000; animation:toast-in .24s cubic-bezier(.2,.8,.2,1) both; }
+.app-toast::backdrop { background:transparent; pointer-events:none; }
+.app-toast-content { display:flex; align-items:flex-start; gap:12px; padding:15px 14px 15px 16px; border-radius:inherit; background:linear-gradient(105deg,var(--toast-tint),#fff 75%); }
+.app-toast-symbol { display:flex; align-items:center; justify-content:center; flex-shrink:0; width:31px; height:31px; border-radius:50%; color:var(--toast-color); background:var(--toast-icon-bg); margin-top:1px; }
+.app-toast-copy { flex:1; min-width:0; padding-top:1px; }.app-toast-copy strong { font-size:13px; font-weight:600; color:var(--toast-color); }.app-toast-copy p { font-size:12px; line-height:1.75; color:#637f90; margin:4px 0 0; overflow-wrap:anywhere; max-height:35vh; overflow:auto; }
+.app-toast-close { display:flex; padding:4px; flex-shrink:0; color:#8ea2af; background:transparent; border-radius:4px; margin:0 0 0 7px; }.app-toast-close:hover { background:#e9eff4; color:#466d83; }.app-toast-close:focus-visible { outline:2px solid #7397ad; outline-offset:2px; }
+.toast-success { --toast-color:#428565; --toast-border:#c8dfd2; --toast-tint:#f2faf5; --toast-icon-bg:#e1f1e7; }
+.toast-error { --toast-color:#b3564e; --toast-border:#e8c9c6; --toast-tint:#fff5f4; --toast-icon-bg:#f8e5e2; }
+.toast-warning { --toast-color:#a17a36; --toast-border:#e7d9b9; --toast-tint:#fffaf0; --toast-icon-bg:#f7edcf; }
+.toast-info { --toast-color:#4d7895; --toast-border:#cbdde9; --toast-tint:#f1f7fb; --toast-icon-bg:#e2eef6; }
+.app-toast.is-closing { animation:toast-out .18s ease-in both; pointer-events:none; }
+@keyframes toast-in { from { opacity:0; transform:translateY(-30px); } to { opacity:1; transform:translateY(0); } }
+@keyframes toast-out { to { opacity:0; transform:translateY(-18px); } }
+@media(max-width:600px) { .app-toast { top:max(10px,env(safe-area-inset-top)); min-width:0; width:calc(100vw - 24px); max-width:none; }.app-toast-content { padding:13px 11px; gap:10px; } }
+@media(prefers-reduced-motion:reduce) { .app-toast,.app-toast.is-closing { animation:none; } }
